@@ -500,7 +500,7 @@ void BinarySearchTree<Key, Value>::remove(const Key& key)
     bool hasLeft = n->getLeft() != nullptr;
     bool hasRight = n->getRight() != nullptr;
 
-    if(!hasLeft && !hasRight){ //leaf node case
+    if(!hasLeft && !hasRight){ 
         if(parent==nullptr){
             root_=nullptr;
         }
